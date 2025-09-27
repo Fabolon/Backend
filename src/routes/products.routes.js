@@ -2,6 +2,7 @@
 import express from "express";
 import { postProduct, getAllProducts, putProductById, deleteProductById } from "../controllers/products.controller.js";
 import { upload } from "../config/multer.js";
+import { auth } from "../middleware/auth.js";
 
 
 // 2 Configurar las rutas.
