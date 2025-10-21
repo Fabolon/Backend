@@ -9,13 +9,13 @@ import { auth } from "../middleware/auth.js";
 export const productRouter = express.Router();
 
 // Ruta para el POST
-productRouter.post("/crear", upload.single("image"), postProduct);
+productRouter.post("/crear", auth("admin"), upload.single("image"), postProduct);
 
 // Ruta para el GET
 productRouter.get("/mostrar", getAllProducts);
 
 // Ruta para el PUT
-productRouter.put("/actualizar/:id", upload.single("image"), putProductById);
+productRouter.put("/actualizar/:id", auth("admin"), upload.single("image"), putProductById);
 
 // Ruta para el DELETE
-productRouter.delete("/eliminar/:id", deleteProductById);
+productRouter.delete("/eliminar/:id", auth("admin"), deleteProductById);

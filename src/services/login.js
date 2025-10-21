@@ -1,6 +1,6 @@
 import { userModel } from "../model/userModel.js"; //validar usuario
 import { generateToken } from "../config/jwt.js";//generar el token de seguridad
-import bcryptjs from "bcryptjs"; //validar la contraseña
+import bcryptjs from "bcryptjs"; //Encriptar la contraseña 
 
 export const login = async (request, response) =>{
     try {

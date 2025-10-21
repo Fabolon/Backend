@@ -8,7 +8,7 @@ export const userRouter = express.Router();
 userRouter.post("/", postUser);
 
 // Ruta para el GET
-userRouter.get("/", getAllUsers);
+userRouter.get("/", auth("admin"), getAllUsers);
 
 // Ruta para el PUT
 userRouter.put("/:id", putUserById);

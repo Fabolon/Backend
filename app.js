@@ -31,6 +31,7 @@ app.use(express.json()); //es para usar formato json
 app.use("/products", productRouter);
 app.use("/users", userRouter);
 app.use("/uploads", express.static(path.join(_dirname, "src/uploads")));
+app.use("/login", loginRouter);
 
 
 // 4. levantar el servidor //3000, 9000
