@@ -1,5 +1,5 @@
 import express from "express";
-import { postUser, getAllUsers, putUserById, deleteUserById } from "../controllers/users.controller.js"
+import { postUser, getAllUsers, putUserById, deleteUserById } from "../controllers/Users.controller.js"
 import { auth } from "../middleware/auth.js";
 // 2 Configurar las rutas.
 export const userRouter = express.Router();
