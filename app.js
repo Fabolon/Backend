@@ -6,7 +6,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { conexionMongo } from "./src/config/db.js";
 import { productRouter } from "./src/routes/products.routes.js";
-import { userRouter } from "./src/routes/users.routes.js";
+import { userRouter } from "./src/routes/Users.routes.js";
 import { loginRouter } from "./src/routes/login.routes.js";
 import cors from "cors";
 import path from "path";
