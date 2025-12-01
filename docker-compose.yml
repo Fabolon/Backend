@@ -19,4 +19,4 @@ services:
       - "443:443"
     volumes:
       - ./nginx/data:/data
-      - ./nginx/letsencrypt:/etc/letsencryp
+      - ./nginx/letsencrypt:/etc/letsencrypt
